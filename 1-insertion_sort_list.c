@@ -8,14 +8,14 @@
  */
 int len_list(listint_t *h)
 {
-	int len = 0;
+	int i = 0;
 
 	while (h)
 	{
-		len++;
+		i++;
 		h = h->next;
 	}
-	return (len);
+	return (i);
 }
 
 /**
