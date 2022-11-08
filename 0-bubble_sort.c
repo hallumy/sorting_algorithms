@@ -21,12 +21,12 @@ void swap(int *xp, int *yp)
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i, j;
+	size_t index, j;
 
 	if (array == NULL || size == 0)
 		return;
 
-	for (i = 0; i < size - 1; i++)
+	for (index = 0; index < size - 1; index++)
 	{
 		for (j = 0; j < size - 1; j++)
 		{
