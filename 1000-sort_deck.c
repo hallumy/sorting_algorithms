@@ -35,15 +35,15 @@ void swap_next(deck_node_t **deck, deck_node_t *node)
 
 size_t deck_len(const deck_node_t *h)
 {
-	size_t cnt = 0;
+	size_t count = 0;
 
 	while (h != NULL)
 	{
-		cnt++;
+		count++;
 		h = h->next;
 	}
 
-	return (cnt);
+	return (count);
 }
 
 /**
@@ -56,14 +56,14 @@ size_t deck_len(const deck_node_t *h)
 
 int card_to_int(deck_node_t *node)
 {
-	int i;
+	int index;
 	char *values[13] = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9",
 			"10", "Jack", "Queen", "King"};
 
-	for (i = 0; i < 13; i++)
+	for (index = 0; index < 13; index++)
 	{
-		if (!strcmp(node->card->value, values[i]))
-			return (i + (13 * node->card->kind));
+		if (!strcmp(node->card->value, values[index]))
+			return (index + (13 * node->card->kind));
 	}
 
 	printf("Uh-oh. Card is out of range. I'm gonna crash now.");
