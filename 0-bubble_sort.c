@@ -2,8 +2,8 @@
 
 /**
  *swap - swaps two integers.
- *@xp: Pointer to the first integer.
- *@yp: Pointer tothe second integer.
+ *@a: Pointer to the first integer.
+ *@b: Pointer tothe second integer.
  *Return: Nothing.
  */
 void swap(int *a, int *b)
