@@ -6,11 +6,11 @@
  *@yp: Pointer tothe second integer.
  *Return: Nothing.
  */
-void swap(int *xp, int *yp)
+void swap(int *a, int *b)
 {
-	int temp = *xp;
-	*xp = *yp;
-	*yp = temp;
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
 /**
