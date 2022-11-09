@@ -28,7 +28,6 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void quick_recursion(int *array, int left, int right, size_t size);
-int partition(int *array, int left, int right, size_t size);
 void shell_sort(int *array, size_t size);
 void switch_nodes(listint_t **list, listint_t **p);
 void swap_values(int **array, ssize_t i1, ssize_t i2);
