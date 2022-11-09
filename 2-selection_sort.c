@@ -24,12 +24,12 @@ void selection_sort(int *array, size_t size)
 	 * look for the smallest element
 	 * swap the smallest element with the current
 	 */
-	unsigned int i = 0, j = 0, tmp_loc = 0;
+	unsigned int index = 0, j = 0, tmp_loc = 0;
 	int tmp;
 
-	while (i < size)
+	while (index < size)
 	{
-		j = i;
+		j = index;
 		tmp = array[j], tmp_loc = j;
 		while (j < size)
 		{
@@ -37,11 +37,11 @@ void selection_sort(int *array, size_t size)
 				tmp = array[j], tmp_loc = j;
 			j++;
 		}
-		if (array[i] != array[tmp_loc])
+		if (array[index] != array[tmp_loc])
 		{
-			swap(array + i, array + tmp_loc);
+			swap(array + index, array + tmp_loc);
 			print_array(array, size);
 		}
-		i++;
+		index++;
 	}
 }
