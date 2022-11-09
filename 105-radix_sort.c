@@ -8,15 +8,15 @@
 void radix_sort(int *array, size_t size)
 {
 	int max;
-	size_t i, lsd;
+	size_t index, lsd;
 
 	if (!array || size < 2)
 		return;
 
 	max = 0;
-	for (i = 0; i < size; i++)
-		if (array[i] > max)
-			max = array[i];
+	for (index = 0; index < size; i++)
+		if (array[index] > max)
+			max = array[index];
 
 	for (lsd = 1; max / lsd > 0; lsd *= 10)
 	{
